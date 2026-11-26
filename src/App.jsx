@@ -107,7 +107,7 @@ function App() {
               ))
             ) : (
               <h4 style={{ textAlign: "center" }}>
-                <i>No results for this status...</i>
+                <i>No results found for this status...</i>
               </h4>
             )
           ) : (
