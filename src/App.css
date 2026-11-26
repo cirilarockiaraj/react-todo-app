@@ -1,0 +1,222 @@
+.container{
+    background-color: #F1F5F9;
+    padding: 15px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.header{
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #E2E8F0;
+}
+
+.header .brand{
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.header .brand i{
+    font-size: 30px;
+    background-color: #EEF2FF;
+    color: #6366F1;
+    padding: 15px;
+    border-radius: 10px;
+    width: 58px;
+    height: 58px;
+}
+
+.body-container{
+    display: flex;
+    gap: 16px;
+}
+
+.body-container .form-container{
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #E2E8F0;
+    width: 40%;
+}
+
+.body-container .form-container .form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.body-container .form-container .form .form-head{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.body-container .form-container .form .form-head i{
+    color: #6366F1;
+}
+
+.body-container .form-container .field-set{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.body-container .form-container .field-set input,textarea{
+    padding: 7px 12px;
+    outline: none;
+    border: 1px solid #E2E8F0;
+    border-radius: 15px;
+}
+
+.body-container .form-container .button-set{
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+
+.body-container .form-container .button-set button{
+    padding: 6px 20px;
+    border-radius: 16px;
+    border: 1px solid #E2E8F0;
+    font-size: 15px;
+}
+
+.body-container .form-container .button-set .clear-btn{
+    background-color: black;
+    color: #E2E8F0;
+}
+
+.body-container .form-container .button-set .add-btn{
+    background-color: #6366F1;
+    color: #E2E8F0;
+}
+
+.body-container .form-container .button-set button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.body-container .todo-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-container .todo-head select{
+    padding: 7px 10px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 16px;
+    border: 1px solid #E2E8F0;
+}
+
+.body-container .todo-container{
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    padding: 20px;
+    width: 60%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 78vh;
+    overflow-y: auto;
+}
+
+.body-container .todo-container .todo-card{
+    padding: 15px;
+    background-color: #F1F5F9;
+    border-radius: 16px;
+    border: 1px solid #E2E8F0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.body-container .todo-container .todo-card .todo-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-container .todo-container .todo-card .todo-head .btn-group{
+    display: flex;
+    gap: 20px;
+}
+
+.body-container .todo-container .todo-card .todo-head .btn-group button{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.body-container .todo-container .todo-card .todo-head .btn-group .edit-btn i{
+    color: #6366F1;
+}
+
+.body-container .todo-container .todo-card .todo-head .btn-group .delete-btn i{
+    color: #EF4444;
+}
+
+.body-container .todo-container .todo-card .todo-head .btn-group button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.body-container .todo-container .todo-card .todo-body{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.body-container .todo-container .todo-card .todo-body .status-group{
+    display: flex;
+    gap: 15px;
+}
+
+.body-container .todo-container .todo-card .todo-body .status-group .pending{
+    padding: 5px 15px;
+    background-color: #fef3c7;
+    color: #b45309;
+    border-radius: 16px;
+}
+
+.body-container .todo-container .todo-card .todo-body .status-group .inprogress{
+    padding: 5px 15px;
+    background-color: #dbeafe;
+    color: #1d4ed8;
+    border-radius: 16px;
+}
+
+.body-container .todo-container .todo-card .todo-body .status-group .completed {
+    padding: 5px 15px;
+    background-color: #dcfce7;
+    color: #15803d;
+    border-radius: 16px;
+}
+
+.body-container .todo-container .todo-card .todo-body .status-group select{
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+}
+
+@media screen and (max-width: 567px) {
+    .body-container{
+        flex-direction: column;
+    }
+
+    .body-container .form-container{
+        width: 100%;
+    }
+
+    .body-container .todo-container{
+        width: 100%;
+    }
+}
